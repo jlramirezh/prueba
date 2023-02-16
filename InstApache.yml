@@ -1,5 +1,5 @@
  ---
-  - hosts: apache
+  - hosts: 192.168.91.138
     sudo: yes
     tasks:
       - name: install apache2

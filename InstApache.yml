@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Install latest version of Apache
-      apt: name=apache2 update_cache=yes state=latest
+      apt: name=apache2 state=latest
     - name: Create document root for domain configured in host variable
       file:
         path: /var/www/{{ http_host }}

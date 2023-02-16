@@ -27,6 +27,4 @@
         regexp="^<VirtualHost \*:80>" line="<VirtualHost *:8081>" state=present
       notify:
         - restart apache2
-      handlers: null
-    - name: restart apache2
-      service: name=apache2 state=restarted
+     
